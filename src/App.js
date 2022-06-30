@@ -12,9 +12,9 @@ function App() {
         <p>
           MUHAHHAHA
         </p>
-        <>
+        <p>
         FUCK!!!!
-        </>
+        </p>
         <a
           className="App-link"
           href="https://reactjs.org"
