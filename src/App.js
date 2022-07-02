@@ -1,29 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import GalleryPage from './components/GalleryPage/GalleryPage';
+import Menu from './components/Menu/Menu';
+import { Link } from "react-router-dom";
+import './app.css';
+import MainPage from './components/MainPage/MainPage';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>
-          MUHAHHAHA
-        </p>
-        <p>
-        FUCK!!!!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Menu />
+      <MainPage />
     </div>
   );
 }
