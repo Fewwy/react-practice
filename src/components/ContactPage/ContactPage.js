@@ -1,4 +1,3 @@
-import react from 'react'
 import Menu from '../Menu/Menu';
 
 const ContactPage = () => {
