@@ -14,7 +14,7 @@ import ContactPage from './components/ContactPage/ContactPage';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename="/react-practice">
     <Routes>
       <Route path="/" element={<App />}/>
       <Route path="gallery" element={<GalleryPage />}/>
