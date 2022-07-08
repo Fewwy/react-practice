@@ -25,12 +25,11 @@ jobs:
       uses: actions/setup-node@v2
       with: 
         node-version: "14.x"
+    - uses: peaceiris/actions-gh-pages@v3
     - name: Install dependencies
       run: npm install
     - name: Create build
       run: npm run build
-    - uses: peaceiris/actions-gh-pages@v3
-    - name: Gh-pages
     - name: Publish build
       run: npm run gh-pages -d build
       
