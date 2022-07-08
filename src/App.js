@@ -6,6 +6,7 @@ const App = () => {
   return (
     <div>
       <Menu />
+      HAHAHAHAHHA WAYAYAYAY
       <MainPage />
     </div>
   );
