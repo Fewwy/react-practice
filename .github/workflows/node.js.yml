@@ -29,9 +29,8 @@ jobs:
       run: npm install
     - name: Create build
       run: npm run build
+    - uses: peaceiris/actions-gh-pages@v3
     - name: Gh-pages
-      with:
-        gh-pages: "4.0.0"
     - name: Publish build
       run: npm run gh-pages -d build
       
