@@ -1,6 +1,6 @@
 import React from "react";
 import Imgix from "react-imgix";
-import Menu from "../Menu/Menu";
+import Navigation from "../Menu/Menu";
 
 const images = [
   "forest1",
@@ -18,8 +18,9 @@ const buildURL = imagePath =>
   `https://assets.imgix.net/tutorials/${imagePath}.webp`;
 
 const GalleryPage = () => (
+  <>
+    <Navigation />
   <div className="gallery">
-    <Menu />
     {images.map(image => (
       <Imgix
         sizes="(min-width: 960px) 33vw, (min-width: 640px) 50vw, 100vw"
@@ -34,6 +35,7 @@ const GalleryPage = () => (
       />
     ))}
   </div>
+  </>
 );
 
 export default GalleryPage;

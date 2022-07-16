@@ -1,13 +1,13 @@
-import Menu from '../Menu/Menu';
+import Navigation from '../Menu/Menu';
 
 const ContactPage = () => {
     return (
-        <div>
-            <Menu />
+        <>
+            <Navigation />
             <p>
                 hahaha contact page
             </p>
-        </div>
+        </>
     )
 }
 
